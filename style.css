@@ -1,0 +1,114 @@
+:root {
+    --heading: 'Rubik', sans-serif;
+    --content: 'Inter', sans-serif;
+    --primary: #000000;
+    --secondary: #384347;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--heading);
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-weight: 400;
+    margin: 3px 0;
+}
+
+h4 {
+    font-size: 16px;
+    color: var(--primary);
+}
+
+h5 {
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+h2,
+h3 {
+    font-size: 18px;
+    color: var(--secondary);
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+p,
+div,
+span {
+    font-size: 14px;
+    font-family: var(--content);
+    color: var(--secondary);
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: #050b20;
+}
+
+main {
+    width: 210mm;
+    margin: 2rem;
+    padding: 0.75in 1in;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+header>div>span {
+    margin-right: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section>div {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section>div>div:nth-last-child(1)>div {
+    font-size: 13px;
+    text-align: right;
+}
+
+@page {
+    size: 210mm 297mm;
+    margin: 0.75in 1in;
+}
+
+@media print {
+    body {
+        background-color: #ffffff;
+    }
+    main {
+        margin: 0;
+        padding: 0;
+    }
+}
