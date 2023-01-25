@@ -48,17 +48,28 @@ h3 {
     color: var(--secondary);
 }
 
-p {
+p,
+ul {
     margin-bottom: 10px;
     text-align: justify;
 }
 
 p,
+ul,
 div,
 span {
     font-size: 14px;
     font-family: var(--content);
     color: var(--secondary);
+}
+
+a {
+    font-size: 13px;
+    font-family: var(--content);
+}
+
+ul {
+    margin: 5px 0 10px 1rem;
 }
 
 body {
@@ -77,6 +88,7 @@ main {
 
 header {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 header>div>span {
@@ -93,6 +105,14 @@ section>div {
     justify-content: space-between;
 }
 
+section>div>div>span {
+    background-color: #e8e8e8;
+    padding: 0.3rem;
+    border-radius: 5px;
+    color: var(--primary);
+    margin-right: 5px;
+}
+
 section>div>div:nth-last-child(1)>div {
     font-size: 13px;
     text-align: right;
@@ -107,6 +127,7 @@ section>div>div:nth-last-child(1)>div {
     body {
         background-color: #ffffff;
     }
+
     main {
         margin: 0;
         padding: 0;
