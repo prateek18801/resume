@@ -58,7 +58,7 @@ p,
 ul,
 div,
 span {
-    font-size: 14px;
+    font-size: 13px;
     font-family: var(--content);
     color: var(--secondary);
 }
@@ -81,7 +81,7 @@ body {
 main {
     width: 210mm;
     margin: 2rem;
-    padding: 0.75in 1in;
+    padding: 0.75in 0.75in;
     border-radius: 3px;
     background-color: #ffffff;
 }
@@ -120,12 +120,12 @@ section>div>div:nth-last-child(1)>div {
 
 @page {
     size: 210mm 297mm;
-    margin: 0.75in 1in;
+    margin: 0.5in 0.75in;
 }
 
 @media print {
     body {
-        background-color: #ffffff;
+        background-color: #FFF;
     }
 
     main {
