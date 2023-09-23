@@ -9,8 +9,9 @@ const Experience = () => {
             location: "Remote, Uttar Pradesh",
             duration: "September 2021 - Present (Ongoing)",
             description: [
-                "Created the official website backend and an administrative dashboard, a web-based attendance portal to track members' daily attendance, increasing productivity by 15%.",
-                "Planned and conducted more than six events, including workshops, hackathons, and coding contests for college students, with an average of 250 participants per event."
+                "Built the official website backend and an administrative dashboard, a web-based attendance portal to track members' daily attendance, increasing productivity by 15%.",
+                "Planned and organized more than six events, including workshops, hackathons, and coding contests for college students, with an average of 250 participants per event.",
+                "Led a team of 6 developers to build a registrar portal and TnP cell portal for a college, streamlining the current processes."
             ]
         },
         {
