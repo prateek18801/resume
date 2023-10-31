@@ -13,10 +13,17 @@ const Projects = () => {
     const projects = [
         {
             title: "BlockTrackers - Blockchain based food supply chain tracking system",
-            url: "https://proxymorons-farm-supplychain.onrender.com/",
+            url: "https://blocktrackers.shahbaz.tech/",
             description: "This system traces farm products from seed sowing till they reach the end customer. The system gathers information on the seed, fertilisers, transportation, etc. using sensors and IoT, and makes it available to the customer via QR Codes.",
             stack: "Nodejs, Ethereum, MongoDB",
             learnings: "Ethereum, Blockchain, IoT, Bootstrap"
+        },
+        {
+            title: "TrackPatrol - Tool for monitoring ground personnel",
+            url: "https://trackpatrol.shahbaz.tech/",
+            description: "TrackPatrol is a system to track police personnel deployed on Bandobast Duties. It can be used for assigning, managing, real-time monitoring of police personnel and generating reports.",
+            stack: "Nodejs, Reactjs, MongoDB, Tailwind, Typescript",
+            learnings: "Tailwind, Typescript, Raspberry PI"
         },
         {
             title: "KisanAssist - Voice assisted contact centre for farmers",
@@ -24,13 +31,6 @@ const Projects = () => {
             description: "AI based voice assistant resolves problems faced by farmers. Farmers can log their problems via phone calls, SMS, or website to get a relevant voice response.",
             stack: "PWA, Reactjs, Nodejs, MongoDB, OpenAi GPT, Twilio",
             learnings: "Prompt Engineering, Web Speech API, Handling Calls and SMS on the Backend"
-        },
-        {
-            title: "Team Chat - A browser based chatting application using web sockets",
-            url: "https://github.com/prateek18801/team-chat.git",
-            description: "The team chat application also contains a pinboard for planning team events. It can handle up to 100 users simultaneously and is easily scalable.",
-            stack: "Nodejs, Reactjs, Socket.io, Firebase",
-            learnings: "Web Sockets, Firebase, Deployment"
         }
     ];
 
@@ -61,7 +61,7 @@ const ProjectCard = ({ title, url, description, stack, learnings }: ProjectCardP
                 <FiLink2 className='my-auto mr-1 text-orange-500' />
                 {url}
             </a>
-            <ul className='list-disc marker:text-gray-600 ml-5'>
+            <ul className='ml-5 list-disc marker:text-gray-600'>
                 <li>{description}</li>
                 <li>Tech Stack: {stack}</li>
                 <li>Key Learnings: {learnings}</li>
