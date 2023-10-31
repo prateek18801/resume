@@ -1,12 +1,12 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import { BsTelephoneFill } from 'react-icons/bs';
 import { FaLocationDot } from 'react-icons/fa6';
+import { BsTelephoneFill } from 'react-icons/bs';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Header = () => {
     return (
         <div className='flex flex-col justify-between mb-5 md:flex-row print:flex-row'>
             <div>
-                <div className='mb-1 text-4xl font-medium'>Prateek Chaurasia</div>
+                <div className='mb-1 text-3xl font-medium md:text-4xl'>Prateek Chaurasia</div>
                 <div className='mb-1 text-lg font-medium text-gray-600'>Web Developer</div>
                 <a className='flex mb-1 font-medium' href='https://maps.app.goo.gl/XK16j7aB3cP7B5J39' target='_blank'>
                     <FaLocationDot className='my-auto mr-1 text-orange-500' />
@@ -24,7 +24,7 @@ const Header = () => {
                 </div>
             </div>
             <div className='flex flex-col'>
-                <a className='flex mb-1 font-medium print:mt-4' href='https://github.com/prateek18801/'>
+                <a className='flex mb-1 font-medium md:mt-8 print:mt-8' href='https://github.com/prateek18801/'>
                     <FaGithub className='my-auto mr-1 text-orange-500' />
                     <div>github.com/prateek18801</div>
                 </a>
