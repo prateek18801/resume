@@ -9,7 +9,7 @@ import Skills from "./components/Skills";
 const App = () => {
     return (
         <div className='flex justify-center bg-gray-900 print:bg-white'>
-            <div className='w-3/5 p-4 m-4 leading-5 shadow-lg rounded-sm bg-white print:m-0 print:p-0 print:w-auto print:shadow-none'>
+            <div className='w-11/12 max-w-screen-lg p-8 m-4 leading-5 bg-white rounded-sm shadow-lg md:scale-100 scale print:m-0 print:p-0 print:w-auto print:shadow-none'>
                 <Header />
                 <Skills />
                 {/* <About /> */}
