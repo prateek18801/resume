@@ -9,7 +9,8 @@ const Skills = () => {
         'MongoDB',
         'SQL',
         'REST APIs',
-        'Web Scokets',
+        'Web Sockets',
+        'Tailwind',
         'Figma'
     ];
 
