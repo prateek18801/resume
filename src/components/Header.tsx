@@ -1,6 +1,6 @@
 import { FaLocationDot } from 'react-icons/fa6';
 import { BsTelephoneFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaGlobe } from 'react-icons/fa';
 
 const Header = () => {
     return (
@@ -24,13 +24,17 @@ const Header = () => {
                 </div>
             </div>
             <div className='flex flex-col'>
-                <a className='flex mb-1 font-medium md:mt-8 print:mt-8' href='https://github.com/prateek18801/'>
+                <a className='flex mb-1 font-medium md:mt-8 print:mt-8' href='https://github.com/prateek18801/' target='_blank'>
                     <FaGithub className='my-auto mr-1 text-orange-500' />
                     <div>github.com/prateek18801</div>
                 </a>
-                <a className='flex font-medium' href='https://linkedin.com/in/prateekchaurasia/'>
+                <a className='flex mb-1 font-medium' href='https://linkedin.com/in/prateekchaurasia/' target='_blank'>
                     <FaLinkedin className='my-auto mr-1 text-orange-500' />
                     <div>linkedin.com/in/prateekchaurasia</div>
+                </a>
+                <a className='flex font-medium' href='https://prateek18801.github.io/portfolio/' target='_blank'>
+                    <FaGlobe className='my-auto mr-1 text-orange-500' />
+                    <div>prateek18801.github.io/portfolio</div>
                 </a>
             </div>
         </div>
