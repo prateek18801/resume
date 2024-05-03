@@ -2,30 +2,30 @@ const Achievements = () => {
 
     const achievements = [
         {
-            title: "Smart India Hackathon 2022 (Hardware Edition) Winner",
-            description: "Asia's biggest hackathon conducted by MoE's Innovation Cell, developed a blockchain-based application to track farm produce, improving transparency in the supply chain."
+            title: "Smart India Hackathon 2022 Winner",
+            description: "Developed an application to track farm produce, improving transparency in the supply chain."
         },
         {
             title: "UNESCO India Africa Hackathon 2022 Runner Up",
-            description: "International hackathon hosted in collaboration with 20+ countries, created a chatbot for farmers to resolve their queries."
+            description: "Created a PWA chatbot for farmers to resolve their queries."
         },
         {
             title: "Kavach Cybersecurity Hackathon 2023 Finalist",
-            description: "Led a team to build Trackpatrol, a real-time police personnel tracking application, at the cybersecurity hackathon partnered with BPR&D and I4C."
+            description: "Led a team to build a police personnel tracking application made it to the top 3."
         }
     ];
 
     return (
-        <>
+        <section className="mb-5">
             <h2 className='font-mono font-bold text-orange-500'>ACHIEVEMENTS</h2>
-            <ul className='list-disc marker:text-gray-600 ml-5'>
+            <ul className='ml-5 list-disc marker:text-gray-600'>
                 {
                     achievements.map(achievement =>
                         <li className='mb-1'><span className='font-medium'>{achievement.title}</span> - {achievement.description}</li>
                     )
                 }
             </ul>
-        </>
+        </section>
     );
 }
 
