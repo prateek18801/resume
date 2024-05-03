@@ -1,15 +1,19 @@
 const Skills = () => {
     const skills = [
-        'C/C++',
-        'Javascript',
-        'Typescript',
         'Reactjs',
+        'NextJS',
         'Nodejs',
         'Expressjs',
         'MongoDB',
         'SQL',
         'REST APIs',
         'Web Sockets',
+        'Puppeteer',
+        'Cheerio',
+        'Kafka',
+        'Typescript',
+        'Javascript',
+        'C/C++',
         'Tailwind',
         'Figma'
     ];
