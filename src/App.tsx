@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Responsibilites from "./components/Responsibilities";
 
 const App = () => {
     return (
@@ -15,10 +16,11 @@ const App = () => {
                 <Header />
                 {/* <About /> */}
                 <Skills />
-                <Projects />
-                <Experience />
                 <Education />
+                <Experience />
+                <Projects />
                 <Achievements />
+                <Responsibilites />
             </div>
         </div>
     );
