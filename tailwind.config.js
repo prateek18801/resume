@@ -10,7 +10,7 @@ export default {
                 "print": { "raw": "print" },
             },
             colors: {
-                "accent-color": "#2563eb"
+                "accent-color": "#1d4ed8"
             },
             fontFamily: {
                 "montserrat": ["Montserrat", "sans-serif"],

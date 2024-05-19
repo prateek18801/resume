@@ -17,7 +17,7 @@ const App = () => {
     }, [isContentEditable]);
 
     const handlePrint = () => {
-        document.title = `RES_PRATEEK_${new Date().toLocaleDateString("en-IN", {
+        document.title = `RESUME_PRATEEK_${new Date().toLocaleDateString("en-IN", {
             year: "2-digit",
             month: "2-digit",
             day: "2-digit"
