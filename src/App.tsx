@@ -16,6 +16,16 @@ const App = () => {
         document.designMode = isContentEditable ? "on" : "off";
     }, [isContentEditable]);
 
+    const handlePrint = () => {
+        document.title = `RES_PRATEEK_${new Date().toLocaleDateString("en-IN", {
+            year: "2-digit",
+            month: "2-digit",
+            day: "2-digit"
+        }).replace(/\//g, "")}`;
+        window.print();
+        document.title = "RESUME - Prateek Chaurasia";
+    }
+
     return (
         <div className="flex justify-center bg-gray-900 print:bg-white">
             <div className="relative w-11/12 max-w-screen-lg p-8 m-4 leading-5 bg-white rounded-sm shadow-lg md:scale-100 scale print:m-0 print:p-0 print:w-auto print:shadow-none">
@@ -26,7 +36,7 @@ const App = () => {
                     >{isContentEditable ? <MdOutlineModeEdit /> : <MdOutlineEditOff />}</button>
                     <button
                         className="p-1 text-lg transition-all border rounded-full outline-none text-accent-color border-accent-color hover:bg-accent-color hover:text-white"
-                        onClick={() => { window.print() }}
+                        onClick={handlePrint}
                     ><AiFillPrinter /></button>
                 </div>
                 <Header />
