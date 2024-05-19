@@ -1,4 +1,4 @@
-import { FiLink2 } from 'react-icons/fi';
+import { FiLink2 } from "react-icons/fi";
 
 type ProjectCardProps = {
     title: string,
@@ -35,8 +35,8 @@ const Projects = () => {
     ];
 
     return (
-        <section className='mb-5'>
-            <h2 className='font-mono font-bold text-orange-500'>PROJECTS</h2>
+        <section className="mb-5">
+            <h2>PROJECTS</h2>
             {
                 projects.map(project =>
                     <ProjectCard
@@ -55,15 +55,15 @@ const Projects = () => {
 
 const ProjectCard = ({ title, url, description, stack, learnings }: ProjectCardProps) => {
     return (
-        <div className='mb-2'>
-            <div className='font-medium'>{title}</div>
-            <a className='flex font-medium text-gray-600' href={url}>
-                <FiLink2 className='my-auto mr-1 text-orange-500' />
+        <div className="mb-2">
+            <div className="font-semibold">{title}</div>
+            <a className="flex font-medium text-gray-600 underline" href={url}>
+                <FiLink2 className="my-auto mr-1 text-accent-color" />
                 {url}
             </a>
-            <ul className='ml-5 list-disc marker:text-gray-600'>
+            <ul className="ml-5 list-disc marker:text-gray-600">
                 <li>{description}</li>
-                <li>Tech Stack and Learnings: {stack}, {learnings}</li>
+                <li>Tech Stack & Learnings: {stack}, {learnings}</li>
             </ul>
         </div>
     );

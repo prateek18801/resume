@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import { AiFillPrinter } from "react-icons/ai";
+import { MdOutlineModeEdit, MdOutlineEditOff } from "react-icons/md";
 // import About from "./components/About";
 import Achievements from "./components/Achievements";
 import Education from "./components/Education";
@@ -9,10 +11,24 @@ import Skills from "./components/Skills";
 import Responsibilites from "./components/Responsibilities";
 
 const App = () => {
+    const [isContentEditable, setIsContentEditable] = useState<boolean>(false);
+    useEffect(() => {
+        document.designMode = isContentEditable ? "on" : "off";
+    }, [isContentEditable]);
+
     return (
         <div className="flex justify-center bg-gray-900 print:bg-white">
             <div className="relative w-11/12 max-w-screen-lg p-8 m-4 leading-5 bg-white rounded-sm shadow-lg md:scale-100 scale print:m-0 print:p-0 print:w-auto print:shadow-none">
-                <button className='absolute p-2 text-xl text-gray-400 transition-all border rounded-full outline-none border-slate-400 top-6 right-6 hover:text-gray-800 hover:border-gray-800 print:hidden' onClick={() => { window.print() }}><AiFillPrinter /></button>
+                <div className="absolute flex items-center gap-1 top-6 right-6 print:hidden">
+                    <button
+                        className={`p-1 text-lg transition-all rounded-full outline-none ${isContentEditable ? "bg-green-600 ring-1 ring-green-600 text-white" : "border-gray-400 text-gray-400 ring-1 ring-gray-400"}`}
+                        onClick={() => { setIsContentEditable(prev => !prev) }}
+                    >{isContentEditable ? <MdOutlineModeEdit /> : <MdOutlineEditOff />}</button>
+                    <button
+                        className="p-1 text-lg transition-all border rounded-full outline-none text-accent-color border-accent-color hover:bg-accent-color hover:text-white"
+                        onClick={() => { window.print() }}
+                    ><AiFillPrinter /></button>
+                </div>
                 <Header />
                 {/* <About /> */}
                 <Skills />

@@ -14,7 +14,7 @@ const Responsibilites = () => {
             ]
         },
         {
-            position: "Full-Stack Web Developer",
+            position: "Full Stack Web Developer",
             company: "Big Data Centre of Excellence",
             location: "",
             duration: "September 2021 - October 2022",
@@ -26,7 +26,7 @@ const Responsibilites = () => {
 
     return (
         <section className='mb-5'>
-            <h2 className='font-mono font-bold text-orange-500'>POSITIONS OF RESPONSIBILITY</h2>
+            <h2>POSITIONS OF RESPONSIBILITY</h2>
             {
                 responsibilities.map(experience =>
                     <HorizontalCard

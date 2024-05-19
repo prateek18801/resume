@@ -20,8 +20,8 @@ const Education = () => {
     ];
 
     return (
-        <section className='mb-5'>
-            <h2 className='font-mono font-bold text-orange-500'>EDUCATION</h2>
+        <section className="mb-5">
+            <h2>EDUCATION</h2>
             {
                 education.map(edu =>
                     <HorizontalCard

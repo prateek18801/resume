@@ -1,4 +1,4 @@
-import HorizontalCard from './HorizontalCard';
+import HorizontalCard from "./HorizontalCard";
 
 const Experience = () => {
 
@@ -46,8 +46,8 @@ const Experience = () => {
       ];
 
     return (
-        <section className='mb-5'>
-            <h2 className='font-mono font-bold text-orange-500'>EXPERIENCE</h2>
+        <section className="mb-5">
+            <h2>EXPERIENCE</h2>
             {
                 experiences.map(experience =>
                     <HorizontalCard

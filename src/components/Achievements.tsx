@@ -17,11 +17,11 @@ const Achievements = () => {
 
     return (
         <section className="mb-5">
-            <h2 className='font-mono font-bold text-orange-500'>ACHIEVEMENTS</h2>
-            <ul className='ml-5 list-disc marker:text-gray-600'>
+            <h2>ACHIEVEMENTS</h2>
+            <ul className="ml-5 list-disc marker:text-gray-600">
                 {
                     achievements.map(achievement =>
-                        <li className='mb-1'><span className='font-medium'>{achievement.title}</span> - {achievement.description}</li>
+                        <li className="mb-1"><span className="font-semibold">{achievement.title}</span> - {achievement.description}</li>
                     )
                 }
             </ul>

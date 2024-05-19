@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import("tailwindcss").Config} */
 export default {
     content: [
         "./index.html",
@@ -7,7 +7,14 @@ export default {
     theme: {
         extend: {
             screens: {
-                'print': { 'raw': 'print' },
+                "print": { "raw": "print" },
+            },
+            colors: {
+                "accent-color": "#2563eb"
+            },
+            fontFamily: {
+                "montserrat": ["Montserrat", "sans-serif"],
+                "inter": ["Inter", "sans-serif"],
             }
         },
     },
