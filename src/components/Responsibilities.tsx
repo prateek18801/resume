@@ -1,28 +1,9 @@
 import HorizontalCard from './HorizontalCard';
+import t from '../config/static';
 
-const Responsibilites = () => {
+const Responsibilities = () => {
 
-    const responsibilities = [
-        {
-            position: "Head Coordinator",
-            company: "Big Data Centre of Excellence",
-            location: "",
-            duration: "November 2022 - Present (Ongoing)",
-            description: [
-                "Planned and organized more than six events, workshops, hackathons, and coding contests, average of 250 participants per event.",
-                "Led a team of 6 developers to build a registrar portal and TnP cell portal for a college, streamlining the current processes."
-            ]
-        },
-        {
-            position: "Full Stack Web Developer",
-            company: "Big Data Centre of Excellence",
-            location: "",
-            duration: "September 2021 - October 2022",
-            description: [
-                "Built the official website backend and an administrative dashboard, a web-based attendance portal to track members' daily attendance. Registration forms for events with rate limiting and spam protection.",
-            ]
-        }
-    ];
+    const responsibilities = t.responsibilities;
 
     return (
         <section className='mb-5'>
@@ -42,4 +23,4 @@ const Responsibilites = () => {
     );
 }
 
-export default Responsibilites;
+export default Responsibilities;
