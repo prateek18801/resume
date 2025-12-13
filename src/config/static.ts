@@ -1,7 +1,7 @@
 export default {
   header: {
     name: "Prateek Chaurasia",
-    role: "Software Design Engineer",
+    role: "Software Development Engineer",
     location: "Noida, Uttar Pradesh, India",
     email: "prateek18801@gmail.com",
     phone: "+91 8726127335",
@@ -44,10 +44,10 @@ export default {
   ],
   experiences: [
     {
-      position: "Software Design Engineer",
+      position: "Software Design Engineer (SDE)",
       company: "Newgen Software Technologies Ltd.",
       location: "On-site, Noida",
-      duration: "July 2024 - December 2025",
+      duration: "July 2024 - Current",
       description: [
         "Contributed to the integration of Generative AI into the core platform by working on Marvin, the AI assistant; integrated OpenAI APIs and applied advanced prompt engineering to ensure the AI successfully generated BPMN-compliant business processes within the product suite.",
         "Modernized a critical service architecture by introducing advanced concurrency patterns (CompletableFuture) and an event-driven design using Spring Events, reducing average API response time from 12s to 3s (a 75% reduction in latency).",
